@@ -59,7 +59,7 @@ def update_department():
 def delete_department():
     id_ = input("Enter the department's id: ")
     if department := Department.find_by_id(id_):
-        department.delete()
+        department.delete.()
         print(f'Department {id_} deleted')
     else:
         print(f'Department {id_} not found')
